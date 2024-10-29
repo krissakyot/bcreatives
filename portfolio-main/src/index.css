@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 4rem;
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.navbar img {
+  width: 4rem;
+
+}
+
+.portfolio-logo {
+  background-image: linear-gradient(45deg, #000000 0%, #0cbe3c 80%, #000000 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about h1, .about h2 {
+  background-image: linear-gradient(45deg, #000000 0%, #0cbe3c 80%, #000000 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.website h1 {
+  background-image: linear-gradient(45deg, #000000 0%, #0cbe3c 30%, #000000 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mobile h1 {
+  background-image: linear-gradient(45deg, #000000 0%, #0cbe3c 30%, #000000 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-intro {
+  background-image: linear-gradient(45deg, #000000 0%, #0cbe3c 80%, #000000 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 640px) {
+  section {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .navbar img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .website button {
+    left: 50%;
+    bottom: -3rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .mobile button {
+    left: 50%;
+    bottom: -3rem;
+    transform: translate(-50%, -50%);
+  }
+}

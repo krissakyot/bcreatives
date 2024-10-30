@@ -18,6 +18,39 @@ section {
   width: 4rem;
 
 }
+.p1, .p2, .p3 {
+  left: 50%;
+  top: 1.5rem;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+}
+@keyframes rotateText {
+  0%, 20% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+
+.p1 {
+  animation: rotateText 9s infinite;
+}
+
+.p2 {
+  animation: rotateText 9s infinite;
+  animation-delay: 3s;
+}
+
+.p3 {
+  animation: rotateText 9s infinite;
+  animation-delay: 6s;
+}
+
 
 @media (max-width: 640px) {
   section {

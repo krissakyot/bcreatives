@@ -5,11 +5,11 @@ export default {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
-  },
-  fontFamily: {
-    sat: ["Inter, interbold"],   
+    extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"], // Adding Inter as a custom font family
+      },
+    },
   },
   plugins: [],
 }
-
